@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background: linear-gradient(45deg, rgb(179, 0, 255), rgb(231, 207, 73));
+  /*background: linear-gradient(45deg, #9a00d2, #7462ff);
+  background: linear-gradient(45deg, #d2001a, #7462ff);*/
+  padding: 0 35px;
+  min-height: 100vh;
+  font-family: 'Oswald', sans-serif;
+}
+
+.cards-container {
+  padding: 0 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+}
+
+.card-container {
+  background-color: #8b8888;
+  border: solid gray 2px;
+  padding: 25px;
+  color: white;
+  position: relative;
+  min-height: 810px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper i {
+  position: absolute;
+  top: 50%;
+  height: 46px;
+  width: 46px;
+  text-align: center;
+  line-height: 46px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  color:black
+}
+
+.wrapper i:first-child {
+  left: -23px;
+}
+
+.wrapper i:last-child {
+  right: -23px;
+}
+
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel .dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel .dragging img {
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 340px;
+  width: 100%;
+  margin-left: 14px;
+}
+
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+.card-info-container {
+  padding-top: 20px;
+}
+
+.card-details-container {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.card-details-container p {
+  padding-bottom: 15px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 10px;
+  padding: 10px;
+  
+}
+
+.links-container a {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  text-decoration: none;
+}
+
+.links-container img {
+  width: 40px;
+}
+
+.links-container div {
+  padding-left: 10px;
+  color: black;
+}
+
+
+
+/*FORM*/
+
+.form-container {
+  line-height: 2.5em;
+  justify-content: center;
+  display: grid;
+}
+
+.form-container input {
+  width: 300px;
+  height: 25px;
+  border-radius: 7px;
+  background-color: rgb(216, 216, 216);
+}
+
+.form-container label {
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 2.5em;
+}
+
+.form-container button {
+  font-size: 1.5em;
+  width: 130px;
+  height: 45px;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 7px;
+  text-transform: uppercase;
+  justify-self: center;
+  margin-top: 35px;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-field label {
+  justify-self: left;
+}
+
+.form-field input {
+  justify-self: right;
+}
+
+#message {
+  height: 120px;
+  text-align: start;
+}
+
+.form-error {
+  color: red;
+  display: none;
+}
+
+.message-success {
+  display: none;
+}
+
+
+/*width: calc(100% / 2)*/
