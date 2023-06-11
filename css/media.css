@@ -38,6 +38,10 @@ h2 {
     font-size: 2em;
   }
 
+  .presentation-container button {
+    margin: 35px 0 0 80px;
+  }
+
   .cards-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -86,5 +90,9 @@ h2 {
   .form-field {
     display: grid;
     grid-template-rows: auto auto;
+  }
+
+  .form-container input {
+    width: 280px;
   }
 }
