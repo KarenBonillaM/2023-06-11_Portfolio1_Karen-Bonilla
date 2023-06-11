@@ -122,43 +122,48 @@ const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 const messageSuccess = document.querySelector(".message-success")
+const contactSection = document.querySelector("#section-contact")
 
 function validateForm() {
   event.preventDefault();
+   
+  try {
+      //VALIDATE NAME
+      if(checkLength(fullName.value, 5) === true) {
+        nameError.style.display = "none";
+      } else {
+        nameError.style.display = "block";
+      }
 
-  //VALIDATE NAME
-  if(checkLength(fullName.value, 5) === true) {
-    nameError.style.display = "none";
-  } else {
-    nameError.style.display = "block";
-  }
+      //VALIDATE EMAIL
+      if(validateEmail(email.value) === true) {
+        emailError.style.display = "none";
+      } else {
+        emailError.style.display = "block";
+      }
 
-  //VALIDATE EMAIL
-  if(validateEmail(email.value) === true) {
-    emailError.style.display = "none";
-  } else {
-    emailError.style.display = "block";
-  }
+      //VALIDATE SUBJECT
+      if(checkLength(subject.value, 15) === true) {
+        subjectError.style.display = "none";
+      } else {
+        subjectError.style.display = "block";
+      }
 
-  //VALIDATE SUBJECT
-  if(checkLength(subject.value, 15) === true) {
-    subjectError.style.display = "none";
-  } else {
-    subjectError.style.display = "block";
-  }
+      //VALIDATE MESSAGE
+      if(checkLength(message.value, 25) === true) {
+        messageError.style.display = "none";
+      } else {
+        messageError.style.display = "block";
+      }
 
-  //VALIDATE MESSAGE
-  if(checkLength(message.value, 25) === true) {
-    messageError.style.display = "none";
-  } else {
-    messageError.style.display = "block";
-  }
-
-if((checkLength(fullName.value, 5) === true) & (validateEmail(email.value) === true) & (checkLength(subject.value, 15) === true) & (checkLength(message.value, 25) === true)) {
-  messageSuccess.style.display = "block";
-} else {
-  messageSuccess.style.display = "none";
-}
+      if((checkLength(fullName.value, 5) === true) & (validateEmail(email.value) === true) & (checkLength(subject.value, 15) === true) & (checkLength(message.value, 25) === true)) {
+      messageSuccess.style.display = "block";
+      } else {
+      messageSuccess.style.display = "none";
+      }
+    } catch (error) {
+      contactSection.innerText = "There was a error"
+    }
 }
 
 form.addEventListener("submit", validateForm);

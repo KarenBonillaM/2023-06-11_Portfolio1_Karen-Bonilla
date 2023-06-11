@@ -11,7 +11,7 @@ a {
 }
 
 body {
-  background-color: #CF927D;
+  background-color: #F2EBDC;
   /*background: linear-gradient(45deg, rgb(179, 0, 255), rgb(231, 207, 73));
   background: linear-gradient(45deg, #9a00d2, #7462ff);
   background: linear-gradient(45deg, #d2001a, #7462ff);*/
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-color: #9D7381;
+  background-color:#BF0426;
   /*background: linear-gradient(45deg, rgb(179, 0, 255), rgb(231, 207, 73));*/
   height: 80px;
   width: 100%;
@@ -45,7 +45,8 @@ header li:hover {
 .presentation-container {
   padding: 70px 280px 80px 200px;
   color: white;
-  background-color: #9D7381;
+  background: linear-gradient(45deg, #73020C, #D94A56);
+  /*background-color: #73020C;*/
 }
 
 .presentation-container h1 {
@@ -69,6 +70,20 @@ header li:hover {
   padding-bottom: 10px;
 }
 
+button {
+  padding: 10px 15px;
+  font-size: 1.2em;
+  margin: 35px 0 0 200px;
+  cursor: pointer;
+  background-color: orange;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.projects-title {
+  padding-top: 55px;
+}
+
 .cards-container {
   padding: 110px 120px;
   display: grid;
@@ -77,7 +92,7 @@ header li:hover {
 }
 
 .card-container {
-  background: #CE623B;
+  background:#D94A56;
   /*background-color: #8b8888;*/
   border: solid gray 2px;
   padding: 25px;
@@ -201,23 +216,16 @@ h2 {
   justify-items: center;
 }
 
-.contact-form {
-  padding-bottom: 80px;
-}
-
-footer {
-  height: 65px;
-  background-color: #9D7381;
-  text-align: center;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 
 /*FORM*/
+#section-contact h2 {
+  padding-bottom: 40px;
+}
+
+.contact-form {
+  padding-bottom: 60px;
+}
 
 .form-container {
   line-height: 2.5em;
@@ -226,8 +234,8 @@ footer {
 }
 
 .form-container input {
-  width: 300px;
-  height: 25px;
+  width: 380px;
+  height: 45px;
   border-radius: 7px;
   background-color: rgb(216, 216, 216);
 }
@@ -272,6 +280,8 @@ footer {
 .form-error {
   color: red;
   display: none;
+  font-size: 1.3em;
+  text-align: center;
 }
 
 .message-success {
@@ -282,5 +292,27 @@ footer {
   display: none;
 }
 
+.social-media {
+  text-align: center;
+  padding-bottom: 30px;
+}
 
-/*width: calc(100% / 2)*/
+.social-media a:first-child {
+  padding-right: 20px;
+}
+
+.social-media img {
+  width: 40px;
+}
+
+
+
+footer {
+  height: 65px;
+  background-color: #BF0426;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
