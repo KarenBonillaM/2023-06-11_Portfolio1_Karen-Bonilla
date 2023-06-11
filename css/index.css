@@ -11,7 +11,7 @@ a {
 }
 
 body {
-  background-color: #F2EBDC;
+  background-color: #D9D9D9;
   /*background: linear-gradient(45deg, rgb(179, 0, 255), rgb(231, 207, 73));
   background: linear-gradient(45deg, #9a00d2, #7462ff);
   background: linear-gradient(45deg, #d2001a, #7462ff);*/
@@ -20,11 +20,11 @@ body {
 }
 
 header {
-  background-color:#BF0426;
+  background-color:#A6A6A6;
   /*background: linear-gradient(45deg, rgb(179, 0, 255), rgb(231, 207, 73));*/
   height: 80px;
   width: 100%;
-  border: 5px solid #795763;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 header ul {
@@ -45,7 +45,7 @@ header li:hover {
 .presentation-container {
   padding: 70px 280px 80px 200px;
   color: white;
-  background: linear-gradient(45deg, #73020C, #D94A56);
+  background: linear-gradient(45deg, #784A8C, #A6A6A6);
   /*background-color: #73020C;*/
 }
 
@@ -55,7 +55,7 @@ header li:hover {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 2.8em;
-  color: #C28827;
+  color: black;
 }
 
 .presentation-container div {
@@ -92,13 +92,14 @@ button {
 }
 
 .card-container {
-  background:#D94A56;
+  background:#784A8C;
   /*background-color: #8b8888;*/
   border: solid gray 2px;
   padding: 25px;
-  color: black;
+  color: white;
   position: relative;
   min-height: 810px;
+  border-radius: 10px;
 }
 
 .wrapper {
@@ -167,10 +168,12 @@ button {
 
 .card-details-container p {
   padding-bottom: 15px;
+  color: white;
 }
 
 .card-details-container li {
   margin-left: 25px;
+  color: white;
 }
 
 .links-container {
@@ -259,6 +262,11 @@ h2 {
   margin-top: 35px;
 }
 
+.form-container button:hover {
+  background-color: #784A8C;
+  color: white;
+}
+
 .form-field {
   display: flex;
   justify-content: space-between;
@@ -310,10 +318,11 @@ h2 {
 
 footer {
   height: 65px;
-  background-color: #BF0426;
+  background-color: #0D0D0D;
   text-align: center;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
