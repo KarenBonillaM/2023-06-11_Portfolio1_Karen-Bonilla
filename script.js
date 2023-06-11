@@ -73,7 +73,7 @@ carousel2.addEventListener("mousedown", dragStart);
 carousel2.addEventListener("mousemove", dragging);
 carousel2.addEventListener("mouseup", dragStop);
 
-/*CAROUSEL 1*/ 
+/*CAROUSEL 3*/ 
 
 const carousel3 = document.querySelector("#carousel3"); 
 firstImg3 = carousel3.querySelectorAll("img")[0];

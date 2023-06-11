@@ -1,0 +1,90 @@
+@media (max-width: 1300px) and (min-width: 800px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card-container {
+    max-width: 700px;
+  }
+}
+
+
+/*MOBIL*/
+@media(max-width: 799px) {
+h2 {
+  font-size: 2em;
+}
+
+  header ul {
+    font-size: 1.5em;
+    gap: 90px;
+  }
+
+  .presentation-container {
+    padding: 70px 50px 80px 50px;
+  }
+
+  .presentation-container h1 {
+    font-size: 2em;
+  }
+
+  .presentation-container div {
+    font-size: 1.2em;
+  }
+
+  #profession {
+    font-size: 2em;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 70px 35px;
+  }
+
+  .card-container {
+    min-height: 710px;
+  }
+
+  .wrapper i {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+  }
+
+  .carousel img {
+    height: 220px;
+  }
+
+  .card-details-container {
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  .links-container img {
+    width: 20px;
+}
+
+  .teck-stack-icons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 50px 80px;
+  }
+
+  .teck-stack-icons-container div {
+    padding-bottom: 20px;
+  }
+
+  .teck-stack-icons-container img {
+    width: 50px;
+  }
+
+  .form-field {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+}
