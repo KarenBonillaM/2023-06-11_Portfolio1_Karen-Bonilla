@@ -12,16 +12,12 @@ a {
 
 body {
   background-color: #D9D9D9;
-  /*background: linear-gradient(45deg, rgb(179, 0, 255), rgb(231, 207, 73));
-  background: linear-gradient(45deg, #9a00d2, #7462ff);
-  background: linear-gradient(45deg, #d2001a, #7462ff);*/
   min-height: 100vh;
   font-family: 'Oswald', sans-serif;
 }
 
 header {
   background-color:#A6A6A6;
-  /*background: linear-gradient(45deg, rgb(179, 0, 255), rgb(231, 207, 73));*/
   height: 80px;
   width: 100%;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.8);
@@ -46,7 +42,6 @@ header li:hover {
   padding: 70px 280px 80px 200px;
   color: white;
   background: linear-gradient(45deg, #784A8C, #A6A6A6);
-  /*background-color: #73020C;*/
 }
 
 .presentation-container h1 {
@@ -93,7 +88,6 @@ button {
 
 .card-container {
   background:#784A8C;
-  /*background-color: #8b8888;*/
   border: solid gray 2px;
   padding: 25px;
   color: white;
@@ -188,17 +182,51 @@ button {
 .links-container a {
   display: flex;
   align-items: center;
-  padding-right: 40px;
   text-decoration: none;
+  margin-right: 40px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.links-container a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-45deg, #ed1c94, #ffec17);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.links-container a:hover::after {
+  top: 0;
+}
+
+.links-container a:hover div {
+  color: white;
+}
+
+.links-container a:hover {
+  transform: translateY(-10px);
 }
 
 .links-container img {
   width: 40px;
+  position: relative;
+  z-index: 10;
 }
 
 .links-container div {
   padding-left: 10px;
   color: black;
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s;
 }
 
 h2 {
@@ -218,7 +246,6 @@ h2 {
   grid-template-rows: 1fr auto;
   justify-items: center;
 }
-
 
 
 /*FORM*/
@@ -306,15 +333,29 @@ h2 {
   padding-bottom: 30px;
 }
 
+.social-media a {
+  height: 40px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 1);
+}
+
+.social-media a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: linear-gradient;
+}
+
 .social-media a:first-child {
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 .social-media img {
   width: 40px;
 }
-
-
 
 footer {
   height: 65px;
